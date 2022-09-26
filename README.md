@@ -10,6 +10,13 @@
 loss 0.1561
 
 
+### Management
+left-click = draw
+
+right-click = clean up
+
+scroll-wheel +/- = +/- brush size
+
 ## Structure
 
 ```
