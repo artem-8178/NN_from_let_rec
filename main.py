@@ -12,7 +12,7 @@ print("scroll-wheel +/- = +/- brush size")
 
 for i in range(0, 3):
     print(3 - i)
-    time.sleep(1)
+    time.sleep(0.5)
 
 img = cv2.imread('t.png', 1)
 img = cv2.resize(img, (480,480))
@@ -34,7 +34,7 @@ def draw_circle(event, x, y, flags, param):
     global radius
     if event == cv2.EVENT_MOUSEMOVE and m_down == True:
         # print('(x:',x,',y:',y,')')
-        s_r = int(radius / 2 )
+        # s_r = int(radius / 2 )
         # cv2.rectangle(img, (x - s_r, y - s_r), (x + s_r, y + s_r), (255,255,255), -1)
         cv2.circle(img, (x,y), radius, (255,255,255), -1)
     elif event == cv2.EVENT_LBUTTONDOWN:
