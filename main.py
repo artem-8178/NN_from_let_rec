@@ -76,11 +76,11 @@ while(1):
     
     sd = rez[0].detach().numpy()
     max_ind = np.argmax(sd)
-    print(f"brush size {radius}")
+    print(f"Brush size {radius}")
     print(f"This | {alf[max_ind]} |?")
     
     
     
-    if cv2.waitKey (100) == ord ('q'): # Нажмите q, чтобы выйти
+    if cv2.waitKey (100) == ord ('q'):
         break
 cv2.destroyAllWindows()
